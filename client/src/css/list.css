@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items : flex-start;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 
@@ -35,6 +35,9 @@
 .address .actions{
     justify-content: space-between
 }
+.address .actions #author a{
+    color: darkblue;
+}
 
 .address .actions div{
     margin: 10px;
@@ -44,6 +47,12 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+.actions a{
+    color: white;
+    text-decoration: none;
 }
 
 .cl-w{

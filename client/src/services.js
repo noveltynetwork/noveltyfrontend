@@ -63,10 +63,16 @@ class Web3Service{
         // 
     }
 
-    GetBalance(){
+    GetBalance = () => {
+     
+        
+            const erc20Contract = new this.web3.eth.Contract(ChildERC20, token)
+            const balance = await erc20Contract.methods.balanceOf(this.from).call()
+            console.log("balance", balance)
+     
     }
 
 }
 
 let service =  new Web3Service();
-export default Service;
+export default service;

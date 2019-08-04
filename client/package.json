@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material/react-snackbar": "^0.15.0",
+    "abi-decoder": "^2.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-fileupload-progress": "^0.5.0",
