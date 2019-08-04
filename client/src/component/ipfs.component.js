@@ -14,7 +14,7 @@ class IpfsComponent extends Component {
             transactionHash: '',
             gasUsed: '',
             txReceipt: '',
-            isLoading : true,
+            isLoading : false,
             contract : props.contract,
             web3 : null,
             storedValue : 0
@@ -44,10 +44,8 @@ class IpfsComponent extends Component {
     
         }
         if ( nextProps.storedValue !== this.state.storedValue){
-    
             console.log("Updating the props" , nextProps );
-            this.setState( {storedValue: nextProps.storedValue } )
-      
+            this.setState( {storedValue: nextProps.storedValue } )      
           }
         return true;
       }
@@ -74,7 +72,8 @@ class IpfsComponent extends Component {
     };
 
     onSubmit =  (event) => {
-        this.setState( {isLoading:true});
+        this.currentMessage ="Loading....."
+        this.setState( {isLoading:true });
         let contractInstance = this.state.contract;
         console.log(contractInstance);
         event.preventDefault();
@@ -93,8 +92,7 @@ class IpfsComponent extends Component {
             this.setState({ ipfsHash: ipfsHash[0].hash });
 
 
-
-            contractInstance.Publish(this.state.ipfsHash , {
+            contractInstance.publish(this.state.ipfsHash , {
                 from: accounts[0]
             }).then((transactionHash) => {
                 this.isLoading = false;
@@ -123,11 +121,13 @@ class IpfsComponent extends Component {
 
                     <h3> Upload your Paper and You are all Set!! </h3>
                     <form onSubmit={this.onSubmit}>
+                        <input className="text-input" placeholder="name"  name="name" ></input>
+                        <input className="text-input" placeholder="description" name="description" ></input>
                         <input className  type="file" onChange={this.captureFile} />
                         <button className="btn"  type="submit"> Publish </button>
                     </form>
                     
-                    { this.isLoading ? <div className="loader">Loading...</div> : ''  }
+                    { this.state.isLoading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> : ''  }
                     { this.currentMessage ? <div >{this.currentMessage}</div> : ''  }
                     
                 </div>

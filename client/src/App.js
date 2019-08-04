@@ -60,7 +60,7 @@ class App extends Component {
         <nav className="navbar" >
           <ul>
             <li>
-              <h3>Novelty Network</h3>
+              <Link to="/" ><h3>Novelty Network</h3></Link>
             </li>
             <li>
               <Link to="/">Home</Link>
@@ -70,6 +70,9 @@ class App extends Component {
             </li>
             <li>
               <Link to="/explore">Explore</Link>
+            </li>
+            <li>
+              <Link to="/">Whitepaper</Link>
             </li>
           </ul>
           </nav>

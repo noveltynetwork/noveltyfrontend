@@ -33,8 +33,7 @@ class MaticTransferComponent extends Component{
 
         return ( 
         <div>
-            <div class="btn" onClick = {this.startTransfer} >Transfer</div>  
-                  
+            <div class="btn" onClick = {this.startTransfer} >Matic Transfer</div>  
         </div>
         )
     }
