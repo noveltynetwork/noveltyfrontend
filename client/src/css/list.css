@@ -1,0 +1,51 @@
+.list-container{
+    width:100%;
+    margin: 10px;  
+}
+
+.list-item{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    display: flex;
+    flex-direction: column;
+    align-items : flex-start;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.subtitle{
+    font-size: 18px;
+}
+
+.details{
+    display: block;
+    text-align: left;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.address{
+    margin : 10px 0;    
+    width: 100%;
+}
+
+.address .actions{
+    justify-content: space-between
+}
+
+.address .actions div{
+    margin: 10px;
+}
+
+.actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cl-w{
+    color: white;
+}

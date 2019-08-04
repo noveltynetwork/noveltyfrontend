@@ -1,0 +1,49 @@
+h3 {
+    margin: -6px;
+    font-size: 24px;
+}
+
+section{
+    color: white;
+    height: 100vh;
+    /* padding: 20px;     */
+    
+}
+.container{
+    background-color: #0a1647;
+}
+
+.hero{
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    
+}
+
+.hero .heading{
+    padding: 30px;
+
+}
+
+.hero .image{
+    padding: 30px;
+    display: block;
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 44px;
+}
+.hero h2{
+    margin-top: -20px;
+    font-size: 28px;
+}
+
+.image img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}

@@ -1,0 +1,41 @@
+.author-container{
+    width:100%;
+    margin: 10px;  
+    color: white;
+    height: 50vh;
+}
+
+.author-container .title{
+    font-size: 42px;
+    margin: 20px;
+    margin-bottom : 40px;
+}
+
+
+
+
+.analytics{
+    display: flex;
+    flex:1;
+    width: 90%;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.analytics .card{
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.card .heading{
+    font-size: 16px;
+}
+
+.card .value{
+    padding: 5px;
+    font-size: 32px;
+}
+
