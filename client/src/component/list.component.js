@@ -64,7 +64,7 @@ class PaperList extends Component{
 
         ];
 
-        this.setState({ list : mockdata });
+        this.setState({ list : [] });
 
 
 

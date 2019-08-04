@@ -1,6 +1,6 @@
 // import VoteToken from '../contracts/VoteToken';
 
-let url = `http://api-ropsten.etherscan.io/api?module=account&action=txlist&address=0x1dD7C32440c9613185Fc6053D44872034aB5fe91&startblock=0&endblock=99999999&sort=asc&apikey=WWZ42T9GT8TPQ9XI76U3N5QPDF2AEHKJRZ`
+let url = `https://api-ropsten.etherscan.io/api?module=account&action=txlist&address=0x1dD7C32440c9613185Fc6053D44872034aB5fe91&startblock=0&endblock=99999999&sort=asc&apikey=WWZ42T9GT8TPQ9XI76U3N5QPDF2AEHKJRZ`
 
 export const getAllTransactions = () => {
     return fetch( url ).then( res => res.json());
